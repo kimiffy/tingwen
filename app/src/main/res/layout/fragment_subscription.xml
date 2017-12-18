@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的订阅"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"/>
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_add_follow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="添加关注"/>
+    </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_state_recycler"
+      />
+</android.support.design.widget.CoordinatorLayout>

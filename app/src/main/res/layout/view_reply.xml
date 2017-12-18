@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_input"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/background"
+                android:visibility="gone">
+
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/send"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/send"
+        android:layout_toRightOf="@+id/iv"
+        android:background="@drawable/shape_reply_bg"
+        android:hint=""
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/grey2"
+        android:textColorHint="@color/assist_text_color_grey"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/shape_replay_send"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="发送"
+        android:textColor="@color/grey2"
+        android:textSize="12sp"/>
+
+
+</RelativeLayout>

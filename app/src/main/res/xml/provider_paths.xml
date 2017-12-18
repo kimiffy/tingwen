@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource>
+    <external-path
+        name="external_files"
+        path="TWNews/"/>
+
+    <paths>
+        <root-path path="" name="camera_photos" />
+    </paths>
+
+    <external-path name="gdt_sdk_download_path" path="GDTDOWNLOAD" />
+</resource>

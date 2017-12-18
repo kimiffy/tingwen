@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/tvCaijing"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <com.flyco.roundview.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            app:rv_cornerRadius="20dp"
+            app:rv_strokeWidth="1dp"
+            app:rv_strokeColor="#B3B3B3"
+            android:text=" 财经 "
+            android:textColor="@color/grey2"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tvWenti"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <com.flyco.roundview.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            app:rv_cornerRadius="20dp"
+            app:rv_strokeWidth="1dp"
+            app:rv_strokeColor="#B3B3B3"
+            android:text=" 文娱 "
+            android:textColor="@color/grey2"
+            android:textSize="12sp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tvGuoji"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+
+        <com.flyco.roundview.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            app:rv_cornerRadius="20dp"
+            app:rv_strokeWidth="1dp"
+            app:rv_strokeColor="#B3B3B3"
+            android:text=" 国际 "
+            android:textColor="@color/grey2"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tvKeji"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+
+        <com.flyco.roundview.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            app:rv_cornerRadius="20dp"
+            app:rv_strokeWidth="1dp"
+            app:rv_strokeColor="#B3B3B3"
+            android:text=" 科技 "
+            android:textColor="@color/grey2"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tvShizheng"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+
+        <com.flyco.roundview.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            app:rv_cornerRadius="20dp"
+            app:rv_strokeWidth="1dp"
+            app:rv_strokeColor="#B3B3B3"
+            android:text=" 时政 "
+            android:textColor="@color/grey2"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

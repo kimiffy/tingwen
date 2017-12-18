@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_touxiang"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/header"
+        android:text="匿名用户"
+        android:textColor="@color/blue_primary"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/name"
+        android:layout_alignParentRight="true"
+        android:text="1200"
+        android:textColor="@color/text_gray"
+        android:textSize="10sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.tingwen.widget.LapTextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这是为什么呢"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_lap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="全文"
+            android:textColor="#3E699D"
+            android:textSize="17sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_friend_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ll"
+        android:layout_below="@id/ll"
+        android:background="@drawable/item_friend_state_news_bg"
+        android:padding="10dp">
+
+        <org.raphets.roundimageview.RoundImageView
+            android:id="@+id/iv_news_item"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            app:leftBottom_corner_radius="3dp"
+            app:leftTop_corner_radius="3dp"
+            app:rightBottom_corner_radius="3dp"
+            app:rightTop_corner_radius="3dp"
+            app:type="round">
+        </org.raphets.roundimageview.RoundImageView>
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_news_item"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_news_item"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="feafeafeafef"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rl_friend_state"
+        android:layout_below="@id/rl_friend_state"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:text="删除"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_gray"
+        android:textSize="10sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_friend_state"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="6dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="点赞"
+            android:src="@drawable/selector_mypage_like"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_like"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/ll_like"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="评论"
+            android:src="@drawable/me_mypage_me_list_ic_comment"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_zan_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@+id/ll_like"
+        android:layout_marginBottom="10dp"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvZanNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/icon_cycle_like"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="ddddffdfafasd"
+            android:textColor="@color/assist_text_color_grey"
+            android:textSize="14sp"/>
+
+        <com.tingwen.widget.UnScrollListView
+            android:id="@+id/lv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvZanNumber"
+            android:layout_marginTop="5dp"
+            android:divider="@android:color/transparent">
+        </com.tingwen.widget.UnScrollListView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider"/>
+</RelativeLayout>

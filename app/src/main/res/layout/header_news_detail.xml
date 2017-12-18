@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <org.raphets.roundimageview.RoundImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:rightBottom_corner_radius="80dp"
+        app:type="round"/>
+
+    <LinearLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_photo"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_anchor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:id="@+id/li_anchor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@+id/tv_follow"
+                android:layout_toStartOf="@+id/tv_follow">
+
+                <ImageView
+                    android:id="@+id/anchor_head"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                 />
+
+
+
+                <TextView
+                    android:id="@+id/anchor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="昵称"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp"/>
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/home_news_ic_anchor"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_no_circle_blue"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="已关注"
+                android:textColor="@color/blue_primary"
+                android:textSize="12sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_news_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_news_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:textColor="@color/text_gray"
+            android:textSize="10sp"/>
+
+        <com.tingwen.widget.NewsContentTextView
+            android:id="@+id/tv_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_black"
+            android:textIsSelectable="true"
+            android:textSize="18sp"
+            app:spaceX="0dp"
+            app:spaceY="5dp"/>
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_three_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_detail"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_news_download_blue"/>
+
+            <TextView
+                android:id="@+id/tv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_download"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="下载"
+                android:textColor="@color/main_text_color_grey"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_toubi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_jinbi"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_news_jinbi"/>
+
+            <TextView
+                android:id="@+id/tv_toubi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_jinbi"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="投金币"
+                android:textColor="@color/main_text_color_grey"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_jinbi_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-7dp"
+                android:layout_marginTop="-2dp"
+                android:layout_toRightOf="@id/iv_jinbi"
+                android:text="0"
+                android:textColor="@color/tb_gold"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_pinglun"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/iconfont_pinglun_red"/>
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_pinglun"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="@color/main_text_color_grey"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_comment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginTop="-2dp"
+                android:layout_toRightOf="@id/iv_pinglun"
+                android:text="0"
+                android:textColor="@color/pinglun_red"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dashang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_three_button"
+        android:layout_margin="15dp"
+        >
+
+        <include
+            layout="@layout/include_shang"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_hotComment"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/rl_dashang"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/home_news_bg_comment"
+        android:gravity="center"
+        android:text="热门评论"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

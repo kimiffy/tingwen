@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_selector"
+            android:contentDescription="返回"/>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:text="确定"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F3F3"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#F3F3F3"
+                android:gravity="top"
+                android:hint="说点什么..."
+                android:textSize="17sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <include layout="@layout/include_record"/>
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="删除"
+                    android:textColor="@color/assist_text_color_grey"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <com.tingwen.widget.AdapterView
+                android:id="@+id/av"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_record"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+            </com.tingwen.widget.AdapterView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.tingwen.widget.AudioRecordButton
+        android:id="@+id/recordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/button_recordnormal"
+        android:gravity="center"
+        android:minHeight="0dp"
+        android:padding="5dp"
+        android:text="@string/normal"
+        android:textColor="#727272">
+    </com.tingwen.widget.AudioRecordButton>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rl_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/touch_bg"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_ranking"
+        android:layout_width="25dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/program_tranprarent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/program_fist"
+            android:gravity="center"
+            android:textColor="@color/main_text_color_grey"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_toRightOf="@id/ll_ranking"
+        android:id="@+id/iv_head_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img_touxiang"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_head_img"
+        android:text="奋斗ING"
+        android:textColor="@color/main_text_color_grey"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="10dp"
+        android:text="粉丝：111"
+        android:textColor="@color/assist_text_color_grey"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_fans"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tv_fans"
+        android:text="金币：111"
+        android:textColor="@color/assist_text_color_grey"
+        android:textSize="12sp"/>
+
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/add_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="4dp"
+        android:text="关注"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:rv_backgroundColor="@color/blue_price"
+        app:rv_cornerRadius="4dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_head_img"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="2"
+        android:paddingRight="5dp"
+        android:text="是这家龙卷解放路了家乐福的解放辅导费第三方地方啥的佛挡杀佛的范德萨发发的发方法方法发的发发的发佛挡杀佛"
+        android:textColor="@color/main_text_color_grey"
+        android:textSize="12sp"
+        android:layout_alignLeft="@+id/tv_fans"
+        android:layout_alignStart="@+id/tv_fans"/>
+
+</RelativeLayout>

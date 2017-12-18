@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!--ripple style-->
+    <style name="ripple">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="mrl_rippleAlpha">0.3</item>
+        <item name="mrl_rippleColor">@color/md_grey_300</item>
+        <item name="mrl_rippleDuration">300</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleOverlay">true</item>
+    </style>
+
+    <style name="ripple2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="mrl_rippleAlpha">0.3</item>
+        <item name="mrl_rippleColor">@color/md_grey_300</item>
+        <item name="mrl_rippleDuration">300</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleOverlay">true</item>
+    </style>
+
+    <!--llyt menu style-->
+    <style name="llyt_menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/md_white_1000</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/ripple">
+
+        <LinearLayout
+            android:id="@+id/llyt_me_tingyou"
+            style="@style/llyt_menu">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dip"
+                android:text="听友圈"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/txt_size_16"/>
+            <TextView
+                android:id="@+id/iv_listen_new_news"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/background_circle_red"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_right_black"/>
+
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <include layout="@layout/line_match"/>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/ripple">
+
+        <LinearLayout
+            android:id="@+id/llyt_me_vip"
+            style="@style/llyt_menu">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dip"
+                android:text="我的会员"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/txt_size_16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_right_black"/>
+
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <include layout="@layout/line_match"/>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/ripple">
+
+        <LinearLayout
+            android:id="@+id/llyt_me_download"
+            style="@style/llyt_menu">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dip"
+                android:text="我的下载"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/txt_size_16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_right_black"/>
+
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <include layout="@layout/line_match"/>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/ripple">
+
+        <LinearLayout
+            android:id="@+id/llyt_me_collection"
+            style="@style/llyt_menu">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dip"
+                android:text="我的收藏"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/txt_size_16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_right_black"/>
+
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <include layout="@layout/line_match"/>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/ripple">
+
+        <LinearLayout
+            android:id="@+id/llyt_me_class"
+            style="@style/llyt_menu">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dip"
+                android:text="我的课堂"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/txt_size_16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_right_black"/>
+
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <include layout="@layout/line_match"/>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/ripple">
+
+        <LinearLayout
+            android:id="@+id/llyt_me_setting"
+            style="@style/llyt_menu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dip"
+                android:text="设置"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/txt_size_16"/>
+
+            <TextView
+                android:id="@+id/iv_set_new_news"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/background_circle_red"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_right_black"/>
+
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <include layout="@layout/line_match"/>
+
+
+</LinearLayout>

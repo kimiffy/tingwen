@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 风格背景淡灰 -->
+    <color name="color_bg">#f1f1f1</color>
+    <!--不可点击-->
+    <color name="color_unable">#a9a9a9</color>
+    <!-- 蓝色 -->
+    <color name="color_blue">#ff007aff</color>
+    <!-- 黑色线条 -->
+    <color name="color_black_line">#d7d6d4</color>
+    <!-- 黑色2纯正 -->
+    <color name="color_black2">#595857</color>
+    <!-- 黑色3（介于纯正与暗黑之间） -->
+    <color name="color_black3">#646464</color>
+
+    <color name="color_black666">#666666</color>
+    <color name="color_black333">#333333</color>
+    <color name="color_black999">#999999</color>
+    <color name="color_black111">#111111</color>
+
+    <color name="color_grey">#f8f8f8</color>
+    <!--白色-->
+    <color name="color_white">#ffffff</color>
+    <!-- 透明颜色 -->
+    <color name="color_alpha">#00000000</color>
+    <color name="color_alpha2">#33000000</color>
+    <color name="color_alpha3">#77000000</color>
+
+    <color name="grey">#484848</color>
+    <color name="grey2">#5b5c60</color>
+    <color name="grey3">#a8a8a8</color>
+    <color name="grey_time">#CDCDCD</color>
+    <color name="light_grey_3">#EEEEEE</color>
+    <color name="blue">#55B9DD</color>
+    <color name="blue_3">#009BF0</color>
+    <color name="blue_name">#57C5F6</color>
+    <color name="blue_dark">#4471BC</color>
+    <color name="blue_price">#5cb8e6</color>
+    <color name="light_grey">#B3B3B3</color>
+    <color name="light_grey_2">#ffE6E6E6</color>
+    <!--分割线颜色-->
+    <color name="divider">#d7d7d7</color>
+
+    <color name="background">#f3f5f7</color>
+    <color name="bottom_menu_bg">#B3B3B3</color>
+    <color name="white">#ffffff</color>
+    <color name="white_main_title">#70ffffff</color>
+    <color name="lucency">#50ffffff</color>
+    <color name="blue_2">#83D0FA</color>
+    <color name="blue_primary">#5cb8e6</color>
+    <color name="main_text_color_grey">#222222</color>
+    <color name="secondary_text_color_grey">#666666</color>
+    <color name="assist_text_color_grey">#999999</color>
+    <color name="transparent">#00000000</color>
+    <color name="canlendar_text_color">#323232</color>
+    <color name="night_mode">#406f6f6f</color>
+    <color name="find_gridview_grey">#F5F5F5</color>
+    <color name="zhuti_action_color">#4E463E</color>
+    <color name="colorTrans">#00ffffff</color>
+    <color name="black">#000000</color>
+    <color name="category_backgroud">#D0D0D0</color>
+    <color name="tb_gold">#f7c323</color>
+    <color name="pinglun_red">#f36868</color>
+    <color name="btn_gold">#f67825</color>
+    <color name="dialog_backgroud">#E3E3E3</color>
+    <color name="text_black">#2e3133</color>
+    <color name="text_gray">#8899a6</color>
+
+    <color name="dialog_green">#129D90</color>
+    <color name="indicator">#6e6e6e</color>
+
+
+    <!--shadowButton-->
+    <color name="color_pressed">#9c000000</color>
+    <color name="ripple_color">#ffeeeeee</color>
+
+
+    <color name="popup_bg">#8f000000</color>
+
+</resources>

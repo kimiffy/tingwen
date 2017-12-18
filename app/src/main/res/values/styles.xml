@@ -1,0 +1,120 @@
+<resources>
+
+    <!--应用主题 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/md_grey_300</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:launchMode">singleTop</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:hardwareAccelerated">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--swipeback 滑动返回-->
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+
+    <!--主页的主题-->
+    <style name="AppTheme.Main" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/md_grey_300</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:hardwareAccelerated">false</item>
+    </style>
+    <!-- -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/md_grey_300</item>
+    </style>
+
+    <style name="transparent">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+
+    <style name="LoginEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/blue_primary</item>
+        <item name="colorControlActivated">@color/blue_primary</item>
+    </style>
+
+    <!-- 设置弹出窗口的属性，frame叠加，isfloat是否浮动，tarnslucent是否半透明，dim是背景是否变暗 -->
+    <style name="Theme_audioDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!--相册图片选择-->
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <!-- 设置该属性解决空白部分-->
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <!--1像素Activity风格 @android:color/transparent-->
+    <style name="SingleActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+    </style>
+
+    <style name="ImageActivity" parent="AppTheme.NoActionBar">
+        <!--<item name="android:windowAnimationStyle">@style/AnimHead</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!-- 无标题 -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!-- 设置全屏显示 -->
+
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!-- 边框 -->
+
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!-- 是否浮现在activity之上 -->
+
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!-- 半透明 -->
+
+        <item name="android:windowBackground">@android:color/black</item>
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+        <!-- 模糊 -->
+    </style>
+
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/grey2</item>
+        <item name="colorControlActivated">@color/grey2</item>
+    </style>
+</resources>

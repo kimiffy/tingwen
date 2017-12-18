@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起始时间："
+            android:textColor="@color/main_text_color_grey"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/et_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_start_time"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="点击选择起始时间"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_start_time"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间："
+            android:textColor="@color/canlendar_text_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/et_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_start_time"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="点击选择结束时间"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_end_time"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="新闻分类："
+            android:textColor="@color/canlendar_text_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/et_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_start_time"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="点击选择新闻分类"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/blue_primary"
+        android:gravity="center"
+        android:text="确  定"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:rv_backgroundColor="@color/blue_price"
+        app:rv_cornerRadius="5dp"/>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--swipeback  滑动返回-->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="all" value="3"/>
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <!--下拉菜单-->
+    <declare-styleable name="DropDownMenu">
+        <attr name="ddunderlineColor" format="color"/>
+        <attr name="dddividerColor" format="color"/>
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddtextPadding" format="dimension"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+    </declare-styleable>
+
+    <!--下拉回弹scrollView -->
+    <declare-styleable name="PullScrollView">
+        <attr name="header" format="reference"/>
+        <attr name="headerHeight" format="dimension"/>
+        <attr name="headerVisibleHeight" format="dimension"/>
+    </declare-styleable>
+
+    <!--状态布局-->
+    <declare-styleable name="StateView">
+        <attr name="state_content" format="reference"/>
+        <attr name="state_error" format="reference"/>
+        <attr name="state_empty" format="reference"/>
+        <attr name="state_loading" format="reference"/>
+        <attr name="state_current" format="enum">
+            <enum name="content" value="0"/>
+            <enum name="loading" value="1"/>
+            <enum name="error" value="2"/>
+            <enum name="empty" value="3"/>
+            <enum name="content_loading" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <!--FlowLayout-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"/>
+        <attr name="max_select" format="integer"/>
+        <attr name="gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--PullToZoomView-->
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference"/>
+        <attr name="contentView" format="reference"/>
+        <attr name="zoomView" format="reference"/>
+        <attr name="isHeaderParallax" format="boolean"/>
+    </declare-styleable>
+
+    <!--shadowButton-->
+    <declare-styleable name="UIButton">
+        <attr name="color_pressed" format="color"/>
+        <attr name="color_unpressed" format="color"/>
+        <attr name="ripple_color" format="color"/>
+        <attr name="ripple_alpha" format="integer"/>
+        <attr name="ripple_duration" format="integer"/>
+        <attr name="alpha_pressed" format="integer"/>
+        <attr name="ui_radius" format="dimension"/>
+        <attr name="shape_type" format="enum">
+            <enum name="round" value="0"/>
+            <enum name="rectangle" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--LevelView-->
+    <declare-styleable name="LevelView">
+        <attr name="textLevel" format="integer"/>
+        <attr name="mTextSzie" format="integer"/>
+    </declare-styleable>
+    <!--NewsContentTextView-->
+    <declare-styleable name="NewsContentTextView">
+        <attr name="spaceX" format="dimension"></attr>
+        <attr name="spaceY" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_news_comments_header"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/img_touxiang"/>
+
+    <TextView
+        android:id="@+id/tv_news_comments_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_news_comments_header"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_news_comments_header"
+        android:text="疯子超人"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_news_comments_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_news_comments_nickname"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_news_comments_header"
+        android:gravity="bottom"
+        android:text="5分钟前"
+        android:textColor="@color/grey_time"
+        android:textSize="11sp"/>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_zan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/tv_time"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignTop="@+id/iv_head"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_zan"-->
+            <!--android:layout_width="14dp"-->
+            <!--android:layout_height="14dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:src="@drawable/icon_zan_no"/>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_zan"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="0"-->
+            <!--android:textColor="@color/light_grey"-->
+            <!--android:textSize="13sp"/>-->
+    <!--</LinearLayout>-->
+
+
+    <TextView
+        android:id="@+id/tv_news_comments_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_news_comments_nickname"
+        android:layout_below="@+id/tv_news_comments_time"
+        android:layout_marginTop="10dp"
+        android:text="倾听才能赢得尊重。针对微博活动的评论，整理出网友最喜爱#华为P8#产品亮点的排名。同时，我们会继续提升产品体验及服务，期待您的评价和建议。转发本条微博，送出5个P8优购码。"
+        android:textColor="@color/grey2"
+        android:textSize="14sp"/>
+</RelativeLayout>

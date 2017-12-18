@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="12dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_rank_container"
+            android:layout_width="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/secondary_text_color_grey"
+                android:text="2"
+                />
+            <ImageView
+                android:id="@+id/iv_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_rank_container"
+            android:layout_marginLeft="18dp"/>
+
+        <ImageView
+            android:id="@+id/iv_head_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fans_head_gold"
+            android:layout_above="@id/iv_head"
+            android:layout_alignLeft="@id/iv_head"
+            android:layout_alignRight="@id/iv_head"
+            android:layout_marginBottom="-3dp"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_head"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/main_text_color_grey"
+                android:text="华沙"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/assist_text_color_grey"
+                android:text="2天前"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"/>
+            <TextView
+                android:id="@+id/tv_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/btn_gold"
+                android:text="100"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_below="@id/tv_time"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_news_jinbi"
+                android:drawablePadding="5dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_listen_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/btn_gold"
+                android:text="100"
+                android:layout_toLeftOf="@id/tv_gold"
+                android:layout_alignTop="@id/tv_gold"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/icon_tingbi"
+                android:drawablePadding="5dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/assist_text_color_grey"
+                android:text="zhe"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/tv_listen_money"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:layout_alignLeft="@id/rl_right"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

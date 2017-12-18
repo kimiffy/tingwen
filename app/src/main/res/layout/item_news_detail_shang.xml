@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingLeft="2dp"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_shang_head"
+            android:layout_width="@dimen/news_detial_shang_img"
+            android:layout_height="@dimen/news_detial_shang_img"
+          />
+        <TextView
+            android:id="@+id/tv_shang_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:lines="1"
+            android:textColor="@color/secondary_text_color_grey"
+            android:text="¥1"/>
+
+</LinearLayout>

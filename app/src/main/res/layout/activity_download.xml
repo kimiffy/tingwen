@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back_selector"
+            android:contentDescription="返回"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的下载"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="@color/grey"
+            android:layout_marginRight="10dp"
+            android:text="删除"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider"></View>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_batch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="批量下载"
+                android:textColor="@drawable/anchor_text_selector"
+                android:textSize="15sp"/>
+
+            <View
+                android:id="@+id/viewFirst"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@color/blue_primary"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:id="@+id/ll_downloaded"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="已下载"
+                android:textColor="@drawable/anchor_text_selector"
+                android:textSize="15sp"/>
+
+            <View
+                android:id="@+id/viewSecond"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="@color/blue_primary"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:id="@+id/ll_downloading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="正在下载"
+                    android:textColor="@drawable/anchor_text_selector"
+                    android:textSize="15sp"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_number"-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:background="@drawable/background_circle_red"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="99"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="10sp"/>-->
+            </FrameLayout>
+
+            <View
+                android:id="@+id/viewThird"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@color/blue_primary"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

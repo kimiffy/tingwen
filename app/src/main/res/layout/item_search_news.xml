@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp">
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_state"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+
+    <ImageView
+        android:id="@+id/iv_news_image"
+        android:layout_width="105dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_state"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_news_image"
+        android:maxLines="3"
+        android:text="新闻标题"
+        android:textColor="@color/text_black"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_news_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_news_image"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_news_image"
+        android:text="2015/07/22"
+        android:textColor="@color/assist_text_color_grey"
+        android:textSize="10sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_news_image"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/tv_news_date"
+        android:gravity="center"
+        android:text="02:20"
+        android:textColor="@color/assist_text_color_grey"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@id/iv_news_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/icon_download_grey"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/iv_news_image"
+        android:layout_marginTop="20dp"
+        android:background="@color/divider"/>
+
+</RelativeLayout>

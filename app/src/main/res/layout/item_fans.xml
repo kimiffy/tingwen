@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/touch_bg"
+                >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/img_touxiang"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_head"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:text="奋斗ING"
+            android:textColor="@color/main_text_color_grey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:text="奋斗ING"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/ll_add_del"
+            android:textColor="@color/assist_text_color_grey"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_add_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/add_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="关注"
+                android:background="@drawable/fans_button_selector"
+                android:textColor="@color/secondary_text_color_grey"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="7dp"
+                android:paddingLeft="7dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/light_grey_2"
+          android:layout_below="@+id/rl"/>
+
+</RelativeLayout>

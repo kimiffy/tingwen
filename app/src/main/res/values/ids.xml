@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--SystemBarHelper-->
+    <item name="statusbar_view" type="id"/>
+    <item name="translucent_view" type="id"/>
+    <item name="layout_avitivity_main" type="id"/>
+    <!--PullToZoomView-->
+    <item type="id" name="scrollview"/>
+
+</resources>

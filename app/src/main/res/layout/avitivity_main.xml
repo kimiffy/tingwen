@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:background="@color/white"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_white"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/rlyt_main_menu_tabcontainer1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_main_menu_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableTop="@drawable/rbtn_menu_center_selector"
+                android:onClick="onTabClicked"
+                android:text="听闻"
+                android:textColor="@drawable/tab_buttom_menu_text"
+                android:textSize="10sp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rlyt_main_menu_tabcontainer2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_main_menu_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableTop="@drawable/rbtn_menu_subscribe_selector"
+                android:onClick="onTabClicked"
+                android:paddingTop="2dp"
+                android:text="订阅"
+                android:textColor="@drawable/tab_buttom_menu_text"
+                android:textSize="10sp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rlyt_main_menu_tabcontainer3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/home_tab_play"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/rlyt_main_menu_tabcontainer4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_main_menu_tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableTop="@drawable/rbtn_menu_find_selector"
+                android:onClick="onTabClicked"
+                android:paddingTop="2dp"
+                android:text="发现"
+                android:textColor="@drawable/tab_buttom_menu_text"
+                android:textSize="10sp"/>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/rlyt_main_menu_tabcontainer5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_main_menu_tab5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableTop="@drawable/rbtn_menu_me_selector"
+                android:onClick="onTabClicked"
+                android:paddingTop="2dp"
+                android:text="我"
+                android:textColor="@drawable/tab_buttom_menu_text"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/iv_new_news"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginLeft="@dimen/txt_size_8"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_circle_red"
+                android:visibility="gone"
+                />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

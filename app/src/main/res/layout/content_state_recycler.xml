@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tingwen.widget.StateView xmlns:android="http://schemas.android.com/apk/res/android"
+                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                              android:id="@+id/mStateView"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              app:state_content="@layout/include_pull_recyclerview"
+                              app:state_empty="@layout/empty"
+                              app:state_current="loading"
+                              app:state_error="@layout/network_error"
+                              app:state_loading="@layout/loading"/>
+

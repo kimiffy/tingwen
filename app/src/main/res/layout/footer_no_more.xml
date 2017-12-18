@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/tv_more"
+          android:layout_width="match_parent"
+          android:text="没有了，别拉啦~"
+          android:padding="15dp"
+          android:gravity="center"
+          android:textColor="@color/color_black666"
+          android:textSize="@dimen/txt_size_14"
+          android:layout_height="wrap_content">
+
+</TextView>

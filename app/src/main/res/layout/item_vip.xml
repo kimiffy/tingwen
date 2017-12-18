@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_type_head"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="#F6F7F8"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="普通会员:"
+            android:textColor="@color/grey"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="1个月"
+            android:textColor="@color/grey"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_month_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/rtv_vip_pay"
+            android:layout_toStartOf="@+id/rtv_vip_pay"
+            android:text="18"
+
+            android:textColor="@color/grey"
+            android:textSize="18sp"/>
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/rtv_vip_pay"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            app:rv_strokeWidth="1dp"
+            app:rv_cornerRadius="50dp"
+            app:rv_strokeColor="#D33B32"
+            android:text="购买"
+            android:textColor="#D33B32"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

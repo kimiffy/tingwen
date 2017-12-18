@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <org.raphets.roundimageview.RoundImageView
+        android:id="@+id/iv_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        app:border_color="@color/divider"
+        app:border_width="1dp"
+        app:leftBottom_corner_radius="5dp"
+        app:leftTop_corner_radius="5dp"
+        app:rightBottom_corner_radius="5dp"
+        app:rightTop_corner_radius="5dp"
+        app:type="round"/>
+
+    <TextView
+
+        android:id="@+id/tv_className"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/tv_money"
+        android:layout_toRightOf="@+id/iv_image"
+        android:ellipsize="end"
+        android:text="课堂名称"
+        android:textColor="#2e3133"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_image"
+        android:ellipsize="end"
+        android:lines="3"
+        android:text="介绍灌灌灌灌灌过过过过过"
+        android:textSize="11sp"/>
+
+
+    <TextView
+
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="¥9.9"
+        android:layout_marginTop="2dp"
+        android:textColor="#5cb8e6"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>
